@@ -15,7 +15,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-		sh "echo Teste para printar Env: $MY_ENV_TEST
+		sh "echo Teste para printar Env: $MY_ENV_TEST"
             }
         }
 
