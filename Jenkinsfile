@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+          MY_ENV_TEST = 'top10variaveisdeambiente'
+        }
+
     stages {
         stage('Build') {
             steps {
@@ -11,6 +15,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+		sh "echo Teste para printar Env: $MY_ENV_TEST
             }
         }
 
